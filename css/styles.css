@@ -1,6 +1,8 @@
 /* CSS files add styling rules to your content */
 * {
     box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
 }
 
 body {
@@ -12,8 +14,14 @@ body {
   }
   
   h1 {
+    font-family: 'Kaushan Script', cursive;
     font-style: italic;
     color: #000;
+  }
+
+  h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.6em;
   }
 
   section {
@@ -21,13 +29,21 @@ body {
   }
 
   footer {
-    height: 8em;
+    height: 15em;
     background-color: rgb(89, 14, 104);
   }
 
   section > p {
     max-width: 50em;
     min-width: 20em;
+  }
+
+  a {
+    color: rgb(31, 17, 48);
+  }
+
+  a:hover {
+    color: rgb(49, 105, 228)
   }
   
   #song-player {
@@ -71,6 +87,7 @@ body {
       align-self: center;
       font-size: 14px;
       text-align: center;
+      color: rgb(230, 223, 223);
   }
 
   #title {
@@ -90,6 +107,32 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 5em;
+  }
+
+  .footerElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  .toTop > img {
+    float: right;
+    padding: 1em;
+    width: 60px;
+  }
+
+  .brandIcons {
+    display: flex;
+    flex-direction: row;
+    width: 11em;
+    justify-content: center;
+  }
+  
+  div.brandIcons > img {
+    padding: 10px;
+    cursor: pointer;
   }
 
   /*Media Queries*/
@@ -128,6 +171,3 @@ body {
     }
   }
   
-
-  /*To dos:
-  1. style font and add color gradients to certain text*/
