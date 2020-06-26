@@ -30,7 +30,7 @@ body {
 
   footer {
     height: 20em;
-    background-color: rgb(89, 14, 104);
+    background-color: rgba(89, 14, 104);
   }
 
   section > p {
@@ -73,7 +73,7 @@ body {
   }
   
   #image {
-    width: 30%;
+    max-width: 30%;
     height: auto;
     min-width: 300px;
     align-self: center;
@@ -143,9 +143,13 @@ body {
   div.footerElements > p {
     font-size: 1.3em;
     font-family: 'Kaushan Script', cursive;
-    /* color: rgb(230, 223, 223);  */
     text-align: center;
+    color: rgb(230, 223, 223);
   }
+
+ figcaption > p > a {
+   font-weight: bold;
+ }
 
   /*Media Queries*/
   @media (max-width: 600px) {
